@@ -23,6 +23,16 @@
             color: #000; /* Setting text color to black */
             font-size: 48px; /* Adjust the font size as needed */
         }
+
+        p.title {
+            text-align: center;
+            color: #000; /* Setting text color to black */
+            font-size: 22px; /* Adjust the font size as needed */
+            font-family: Baskerville, serif; /* Apply the same font-family as h1 */
+            margin-top: 10px; /* Add margin top for spacing */
+        }
+       
+
         p {
             text-align: justify;
             color: #000; /* Setting text color to black */
@@ -36,9 +46,12 @@
         }
         .pitch-img {
             display: block;
-            margin: 0 auto;
-            max-width: 100%;
+            margin: 0;
+            max-width: 75px; /* Set max-width for the image */
             height: auto;
+            position: absolute; /* Set position to absolute */
+            top: 40px; /* Position at the top */
+            left: 800px; /* Position at the left */
         }
         .demo-link {
             text-align: center;
@@ -48,22 +61,28 @@
             text-decoration: none;
             color: #007bff;
         }
+        .pitch-text {
+            margin-top: 50px; /* Add top margin to move the text down */
+        }
+        .center-image {
+            text-align: center;
+            margin-top: 50px; /* Adjust top margin as needed */
+        }
+        .center-image img {
+            max-width: 100%; /* Ensure the image doesn't exceed its container width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any inline spacing */
+            margin: 0 auto; /* Center horizontally */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Hummingbird</h1>
-        <p style="text-align: center;">Discover birds effortlessly, connect with nature deeply.</p> <!-- New sentence added -->
+        <p class="title">Discover birds effortlessly, connect with nature deeply.</p> <!-- New sentence added -->
         <img class="pitch-img" src="images/HummingbirdLogo.png" alt="Hummingbird Logo"> <!-- Updated image source -->
-        <p>Hummingbird streamlines your bird identification process through CNN powered image classification.</p>
-        <p>With Hummingbird, you can:</p>
-        <ol>
-            <li>Snap or upload a picture</li>
-            <li>Get instant identification! Our image recognition technology swiftly identifies the species of bird in the photo.</li>
-            <li>Explore our educational resources. After identification, we will connect you to comprehensive information and educational resources about the identified bird species.</li>
-            <li>Stay connected with nature. We handle the research so you can spend more time immersed in the wonders of nature.</li>
-        </ol>
-        <p>Experience the power of productivity with Hummingbird. Say goodbye to chaos and hello to efficiency!</p>
+        <div class="center-image">
+            <img src="images/design.png" alt="Design Image">
         <div class="demo-link">
             <a href="demo.html">Click here for a demo</a>
         </div>
