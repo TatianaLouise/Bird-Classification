@@ -50,18 +50,18 @@
             - Visualized random images from different classes to get an understanding of the data.
         </p>
         <p><strong>Data Preprocessing:</strong><br>
-            - Defined a function to load and process images, including resizing and rescaling them.<br>
+            - Loaded and processed images, including resizing and rescaling.<br>
             - Created data generators using ImageDataGenerator to load images from directories and apply data augmentation techniques like rescaling.
         </p>
         <p><strong>Model Architecture:</strong><br>
-            - Chose pre-trained model InceptionV3 as the base model for feature extraction.<br>
+            - Utilized the pre-trained model InceptionResNetV2 as the base model for feature extraction.<br>
             - Froze the base model's layers to prevent them from being trained again.<br>
             - Added a global average pooling layer to reduce the spatial dimensions of the features.<br>
             - Added a dense output layer with softmax activation for classification.
         </p>
         <p><strong>Model Compilation and Training:</strong><br>
             - Compiled the model with Adam optimizer.<br>
-            - Fit the model for training, specifying training and defined number of epochs.<br>
+            - Fit the model for training, specifying training data and defined number of epochs.<br>
             - Evaluated the model performance on the test data.<br>
             - Saved the trained model in the native Keras format for future use.
         </p>
@@ -69,7 +69,7 @@
             - Loaded the saved model using TensorFlow/Keras.<br>
             - Defined a function to predict and plot a single image using the loaded model.
         </p>
-        <p>Overall, this CNN model was created by leveraging transfer learning with a pre-trained InceptionV3 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization, and the final model was saved for deployment and future use.</p>
+        <p>Overall, this CNN model was constructed by leveraging transfer learning with a pre-trained InceptionResNetV2 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization. The final model was saved for deployment and future use.</p>
     </div>
 </body>
 </html>
