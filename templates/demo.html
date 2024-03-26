@@ -37,6 +37,22 @@
         strong {
             font-weight: bold; /* Make the titles bold */
         }
+        .center-images {
+            text-align: center;
+            margin-bottom: 80px; /* Add space at the bottom */
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 0 10px; /* Adjust the space between images */
+        }
+
+        .small-image {
+            width: 500px; /* Adjust the width of the images */
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+
     </style>
 </head>
 <body>
@@ -48,6 +64,10 @@
             {{form.file()}}
             {{form.submit()}}
         </form>
+       
+        </form>
+
+        
         <h3>Creation Process</h3>
         <p><strong>Data Exploration and Preparation:</strong><br>
             - Explored the dataset directory structure to understand the organization of the data.<br>
@@ -76,5 +96,14 @@
         </p>
         <p>Overall, this CNN model was created by leveraging transfer learning with a pre-trained InceptionV3 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization, and the final model was saved for deployment and future use.</p>
     </div>
-</body>
+
+    <div class="center-images">
+        <div class="image-container">
+            <img class="small-image" src="{{ url_for('static', filename = 'images/accuracy.png') }}" alt="Design Image">
+        </div>
+    
+        <div class="image-container">
+            <img class="small-image" src="{{ url_for('static', filename = 'images/loss.png') }}" alt="Design Image">
+        </div>
+    </div>
 </html>
