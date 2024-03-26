@@ -43,6 +43,11 @@
     <div class="container">
         <h1>Hummingbird</h1>
         <h2>Our Machine Learning Model</h2>
+        <form action="/demo" method="post" enctype="multipart/form-data">
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
         <h3>Creation Process</h3>
         <p><strong>Data Exploration and Preparation:</strong><br>
             - Explored the dataset directory structure to understand the organization of the data.<br>
@@ -61,7 +66,7 @@
         </p>
         <p><strong>Model Compilation and Training:</strong><br>
             - Compiled the model with Adam optimizer.<br>
-            - Fit the model for training, specifying training data and defined number of epochs.<br>
+            - Fit the model for training, specifying training and defined number of epochs.<br>
             - Evaluated the model performance on the test data.<br>
             - Saved the trained model in the native Keras format for future use.
         </p>
@@ -69,7 +74,7 @@
             - Loaded the saved model using TensorFlow/Keras.<br>
             - Defined a function to predict and plot a single image using the loaded model.
         </p>
-        <p>Overall, this CNN model was constructed by leveraging transfer learning with a pre-trained InceptionResNetV2 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization. The final model was saved for deployment and future use.</p>
+        <p>Overall, this CNN model was created by leveraging transfer learning with a pre-trained InceptionV3 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization, and the final model was saved for deployment and future use.</p>
     </div>
 </body>
 </html>

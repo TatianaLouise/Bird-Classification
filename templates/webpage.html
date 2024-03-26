@@ -81,11 +81,11 @@
     <div class="container">
         <h1>Hummingbird</h1>
         <p class="title">Discover birds effortlessly, connect with nature deeply.</p> <!-- New sentence added -->
-        <img class="pitch-img" src="images/HummingbirdLogo.png" alt="Hummingbird Logo"> <!-- Updated image source -->
+        <img class="pitch-img" src="{{ url_for('static', filename = 'images/HummingbirdLogo.png') }}" alt="Hummingbird Logo"> <!-- Updated image source -->
         <div class="center-image">
-            <img src="images/design.png" alt="Design Image">
+            <img src="{{ url_for('static', filename = 'images/design.png') }}" alt="Design Image">
         <div class="demo-link">
-            <a href="demo.html">Click here to learn more</a>
+            <a href="demo">Click here to learn more</a>
         </div>
     </div>
 </body>
