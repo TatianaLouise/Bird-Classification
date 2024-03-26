@@ -53,6 +53,10 @@
         }
         
 
+
+
+
+
     </style>
 </head>
 <body>
@@ -94,7 +98,12 @@
             - Loaded the saved model using TensorFlow/Keras.<br>
             - Defined a function to predict and plot a single image using the loaded model.
         </p>
-        <p>Overall, this CNN model was created by leveraging transfer learning with a pre-trained InceptionV3 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization, and the final model was saved for deployment and future use.</p>
+
+        <p><strong>Flask application:</strong><br>
+            - Model connects to a flask web application with a user-friendly interface and offers the option to upload bird image inputs.<br>
+            - The model classifies bird species and provides a link to the Cornell Lab of Ornithology for more information. If unable to identify the species, it displays "species not found" to the user.
+        </p><strong>
+        <p>Overall, this CNN model was constructed by leveraging transfer learning with a pre-trained InceptionResNetV2 model, followed by fine-tuning on the specific dataset. Data augmentation techniques were applied during training to improve model generalization. The final model was saved for deployment and future use.</strong></p>
     </div>
 
     <div class="center-images">
