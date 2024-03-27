@@ -64,7 +64,7 @@ While this model is mapped to 118 birds, the mock website is limited to the foll
 - "BLONDE CRESTED WOODPECKER",
 - "BROWN NODDY"
   
-For full functionality, reference and run **modes_test.ipynb ** and feed images through this notebook. 
+For full functionality, reference and run modes_test.ipynb and feed images through this notebook. 
 
 For detailed information, refer to the project code and documentation.
 
