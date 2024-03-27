@@ -53,5 +53,19 @@ This project was developed by Josh Mares, Madison Hamby, Matthew Garcia, and Tat
 - [Matthew Garcia] - https://github.com/matthewjgarcia 
 - [Tatiana Oropel] - https://github.com/TatianaLouise 
 
+## Note regarding mock website:
+
+While this model is mapped to 118 birds, the mock website is limited to the following birds: 
+
+- "ABYSSINIAN GROUND HORNBILL",
+- "AFRICAN CROWNED CRANE",
+- "AFRICAN PYGMY GOOSE",
+- "BLACK BAZA",
+- "BLONDE CRESTED WOODPECKER",
+- "BROWN NODDY"
+  
+For full functionality, reference and run **modes_test.ipynb ** and feed images through this notebook. 
+
 For detailed information, refer to the project code and documentation.
+
 
